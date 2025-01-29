@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Main App Container */
+#app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Text Container */
+#text-container {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Webcam Container */
+#webcam-container canvas {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Increased width */
+    height: auto;
+    margin-bottom: 20px;
+    border: 3px solid #007bff;
+}
+
+/* Label Container */
+#label-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#label-container div {
+    padding: 8px 16px;
+    margin: 4px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* End Button Styling */
+button:last-of-type {
+    background-color: #dc3545; /* Red for the "End" button */
+}
+
+button:last-of-type:hover {
+    background-color: #c82333;
+}

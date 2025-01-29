@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Machine Image Model</title>
+    <link rel="stylesheet" href="tfjs.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+    <div id="app-container">
+        <div id="text-container">Teachable Machine Image Model</div>
+        <div id="webcam-container"></div>
+        <button type="button" id="start-button" onclick="init()">Start</button>
+        <div id="label-container"></div>
+        <button type="button" onclick="endSession()">End</button>
+    </div>
+
+    <script src="tfjs.js"></script>
+</body>
+</html>
